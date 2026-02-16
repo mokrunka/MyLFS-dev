@@ -1,10 +1,11 @@
 # MyLFS
-It's a giant bash script that builds Linux From Scratch.
+It's a giant bash script that builds Linux From Scratch. Pronouce it however you like.
 
 If you don't know what this is, or haven't built Linux From Scratch on your own before, you should go through the LFS [book](https://linuxfromscratch.org) before using this script. I have been careful to leave some comments throughout the script indicating the section of the book that a particular part of the script comes from, although most sections are not marked. For example, you might see "LFS 12.4 Section 4.2". For someone wanting to understand this script while going through the book, paying attention to these may come in handy.
 
-This is a script that I wrote for myself and for my own use, but I encourage others to fork this repository and either craft their own versions, or submit PRs to this one.
+This is a script that @krglaws initially wrote, and I've helped update it for LFS 12.4 (systemd). This repository (MyLFS-dev) is a playground for testing updates to the script for LFS release candidates.
 
+If you're interested in building the latest STABLE LFS build, you should go to MyLFS (https://github.com/mokrunka/MyLFS)
 ## How To Use
 Consult the `mylfs.sh` help message to get a full picture of its features:
 ```
