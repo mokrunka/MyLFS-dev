@@ -1,5 +1,5 @@
 # Grub Phase 4
-echo depends bli part_gpt > grub-core/extra_deps.lst
+sed 's/--image-base/--nonexist-linker-option/' -i configure
 
 ./configure --prefix=/usr          \
             --sysconfdir=/etc      \
@@ -9,6 +9,5 @@ echo depends bli part_gpt > grub-core/extra_deps.lst
 make
 
 make install
-mv /etc/bash_completion.d/grub /usr/share/bash-completion/completions
 
 grub-install $LOOP --target i386-pc

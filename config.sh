@@ -15,9 +15,9 @@ umask 022
 # 2) make or other build tools
 # 3) in the template files
 export LC_ALL=POSIX
-export LFS_VERSION=12.4
+export LFS_VERSION=13.0-rc1
 export LFS_CODENAME=lfs  # change this to whatever you want
-export LFS_KERNEL_VERSION=6.16.1
+export LFS_KERNEL_VERSION=6.18.10
 export LFS_TGT=$ARCH-lfs-linux-gnu
 export LFS_ROOT_LABEL=LFSROOT
 export LFS_FS_TYPE=ext4
@@ -34,7 +34,7 @@ export PATH=/usr/bin:/usr/sbin
 if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
 PATH=$LFS/tools/bin:$PATH
 LFS_IMG=$SCRIPT_DIR/lfs.img
-LFS_IMG_SIZE=$((10*1024*1024*1024)) # 10 GiB
+LFS_IMG_SIZE=$((50*1024*1024*1024)) # 50 GiB
 INSTALL_MOUNT=$SCRIPT_DIR/mnt/install
 LFS_PACKAGE_LIST=$SCRIPT_DIR/packages.sh
 LFS_PACKAGE_DIR=$SCRIPT_DIR/packages
@@ -57,7 +57,7 @@ export RUN_TESTS=0
 
 # used for the systemd build
 export BUILDSYSTEMD=0
-KERNEL_SUFFIX=$( ((BUILDSYSTEMD)) && echo -systemd || echo "" )
+KERNEL_SUFFIX=$( ((BUILDSYSTEMD)) && echo -systemd-rc1 || echo "" )
 export LFS_KERNEL_SUFFIX=$KERNEL_SUFFIX
 
 # only one of these can be "set" at a time
@@ -157,6 +157,7 @@ dialout:x:10:
 audio:x:11:
 video:x:12:
 utmp:x:13:
+clock:x:14:
 cdrom:x:15:
 adm:x:16:
 messagebus:x:18:

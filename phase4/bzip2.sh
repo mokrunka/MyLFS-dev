@@ -11,6 +11,7 @@ make PREFIX=/usr install
 
 cp -a libbz2.so.* /usr/lib
 ln -s libbz2.so.1.0.8 /usr/lib/libbz2.so
+ln -s libbz2.so.1.0.8 /usr/lib/libbz2.so.1
 cp bzip2-shared /usr/bin/bzip2
 for i in /usr/bin/{bzcat,bunzip2}; do
   ln -sf bzip2 $i

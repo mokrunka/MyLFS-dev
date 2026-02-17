@@ -8,6 +8,7 @@ lz4
 zstd
 file
 readline
+pcre2
 m4
 bc
 flex
@@ -46,6 +47,7 @@ automake
 openssl
 elfutils
 libffi
+sqlite
 python
 flitcore
 packaging

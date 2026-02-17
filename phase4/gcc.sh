@@ -1,4 +1,5 @@
 # GCC Phase 4
+sed -i 's/char [*]q/const &/' libgomp/affinity-fmt.c
 
 case $(uname -m) in
   x86_64)

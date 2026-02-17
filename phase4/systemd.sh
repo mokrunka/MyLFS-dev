@@ -17,7 +17,6 @@ meson setup ..                \
       -D sysusers=false       \
       -D rpmmacrosdir=no      \
       -D homed=disabled       \
-      -D userdb=false         \
       -D man=disabled         \
       -D mode=release         \
       -D pamconfdir=no        \
@@ -25,7 +24,7 @@ meson setup ..                \
       -D nobody-group=nogroup \
       -D sysupdate=disabled   \
       -D ukify=disabled       \
-      -D docdir=/usr/share/doc/systemd-257.8
+      -D docdir=/usr/share/doc/systemd-259.1
 
 ninja
 
@@ -38,7 +37,7 @@ fi
 
 ninja install
 
-tar -xf ../../systemd-man-pages-257.8.tar.xz  \
+tar -xf ../../systemd-man-pages-259.1.tar.xz  \
     --no-same-owner --strip-components=1      \
     -C /usr/share/man
 

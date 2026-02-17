@@ -10,6 +10,4 @@ make
 
 make install
 
-cp -R -v docs/doc -T /usr/share/doc/kbd-2.8.0
-
-
+cp -R -v docs/doc -T /usr/share/doc/kbd-2.9.0
