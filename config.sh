@@ -184,8 +184,8 @@ ETC_SYSTEMD_NETWORK="\
 Name=eth0
 
 [Network]
-Address=192.168.0.2/24
-Gateway=192.168.0.1"
+Address=192.168.10.205/24
+Gateway=192.168.10.1"
 
 ETC_FSTAB_SYSVINIT="\
 LABEL=$LFS_ROOT_LABEL   /              $LFS_FS_TYPE     defaults            1     1
