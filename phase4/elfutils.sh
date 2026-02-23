@@ -3,7 +3,8 @@
             --disable-debuginfod         \
             --enable-libdebuginfod=dummy
 
-make
+make -C lib
+make -C libelf
 
 if (( RUN_TESTS )); then
     set +e

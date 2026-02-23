@@ -1,4 +1,4 @@
-s# Python Phase 4
+# Python Phase 4
 ./configure --prefix=/usr                 \
             --enable-shared               \
             --with-system-expat           \
