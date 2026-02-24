@@ -1,0 +1,7 @@
+*.img
+*.swp
+packages/
+logs/
+mnt/
+example_extension/packages/
+example_extension/logs/
